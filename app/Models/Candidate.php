@@ -20,9 +20,9 @@ class Candidate extends Model
         'name', 'slug', 'code', 'sloggan',
     ];
 
-    public function election()
+    public function event()
     {
-        return $this->belongsTo(Election::class);
+        return $this->belongsTo(Event::class);
     }
 
     public function party()

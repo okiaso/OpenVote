@@ -40,9 +40,9 @@ class Party extends Model
         return $this->hasMany(Candidate::class);
     }
 
-    public function elections()
+    public function events()
     {
-        return $this->hasMany(Election::class);
+        return $this->hasMany(Event::class);
     }
 
     public function voters()

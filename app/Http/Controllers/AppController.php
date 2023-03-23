@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Election;
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class AppController extends Controller
@@ -10,7 +10,7 @@ class AppController extends Controller
     public function home(Request $request)
     {
         $data = [];
-        $data['elections'] = Election::all();
+        $data['events'] = Event::all();
 
         return view('welcome', $data);
     }

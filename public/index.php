@@ -48,9 +48,7 @@ require APP_DIR . 'vendor/autoload.php';
 $app = require_once APP_DIR . 'bootstrap/app.php';
 
 // Set the public path to base directory
-$app->bind('path.public', function () {
-    return __DIR__;
-});
+$app->usePublicPath(__DIR__);
 
 $kernel = $app->make(Kernel::class);
 

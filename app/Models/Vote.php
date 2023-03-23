@@ -34,8 +34,8 @@ class Vote extends Model
         return $this->hasOne(Candidate::class);
     }
 
-    public function election()
+    public function event()
     {
-        return $this->hasOne(Election::class);
+        return $this->hasOne(Event::class);
     }
 }
